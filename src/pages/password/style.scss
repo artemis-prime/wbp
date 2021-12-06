@@ -1,0 +1,16 @@
+.form-outer {
+  &.request-password-form {
+
+    form {
+      align-items: center;
+      .MuiTextField-root {
+        min-width: 400px;
+        max-width: 600px;
+      }
+    }
+  }
+
+  .login-button-outer {
+    text-align: right;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "include": ["src","types"],
+  "compilerOptions": {
+    "declaration": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "error",
+    "baseUrl": "./",
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+}

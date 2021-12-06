@@ -1,0 +1,84 @@
+Arguments: 
+  /home/artem/.nvm/versions/node/v14.7.0/bin/node /home/artem/.yarn/bin/yarn.js clean
+
+PATH: 
+  /home/artem/.yarn/bin:/home/artem/.config/yarn/global/node_modules/.bin:/home/artem/Android/Sdk:/home/artem/Android/Sdk/platform-tools:/home/artem/Android/Sdk/emulator:/home/artem/Android/Sdk/tools/bin:/home/artem/.yarn/bin:/home/artem/.config/yarn/global/node_modules/.bin:/home/artem/.nvm/versions/node/v14.7.0/bin:/home/artem/Android/Sdk:/home/artem/Android/Sdk/platform-tools:/home/artem/Android/Sdk/emulator:/home/artem/Android/Sdk/tools/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.7.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/artem/dev/ipsum-store/packages/wfw/package.json: Unexpected token } in JSON at position 674
+      at JSON.parse (<anonymous>)
+      at /home/artem/.yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/artem/.yarn/lib/cli.js:310:30)
+      at /home/artem/.yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@artemis-prime/wfw",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "tsc",
+      "prepare": "yarn build",
+      "clean": "rm -rf ./node_modules && rm -rf ./dist"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "author": "artemis-prime",
+    "license": "Apache-2.0",
+    "dependencies": {
+      "selectn": "^1.1.2",
+      "query-string": "^6.13.8",
+      "formik": "^2.2.6",
+      "formik-material-ui": "^3.0.1",
+      "@react-hook/window-size": "^3.0.7",
+      "moment": "^2.29.1",
+      "react-linkify": "^1.0.0-alpha",
+      "react-player": "^2.7.0",
+      "generate-unique-id": "^2.0.1",
+      "json2mq": "^0.2.0",
+      "@prezly/react-promise-modal": "^0.2.0",
+  
+    },
+    "peerDependencies": {
+      "@material-ui/core": "^4.12.3",
+      "@material-ui/icons": "^4.11.2",
+      "@material-ui/lab": "^4.0.0-alpha.60",
+      "classnames": "^2.2.6",
+      "material-ui-phone-number": "^2.2.6",
+      "material-ui-popup-state": "^1.7.0",
+      "mobx": "^6.3.7",
+      "mobx-react": "^7.2.1",
+      "mobx-utils": "^6.0.4",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "react-router": "^5.2.0",
+      "react-router-dom": "^5.2.0",
+      "react-select": "^5.2.1",
+      "react-table": "^7.7.0"
+    },
+    "devDependencies": {
+      "@types/classnames": "^2.2.10",
+      "@types/react": "^16.9.49",
+      "@types/react-dom": "^16.9.8",
+      "@types/react-router-dom": "^5.1.6",
+      "@types/react-table": "^7.7.7",
+      "sass": "^1.41.1",
+      "sass-loader": "^12.1.0",
+      "style-loader": "^3.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,82 @@
+{
+  "name": "@artemis-prime/wbp",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "tsc",
+    "copy-assets": "cd src && find . -type f ! -name '*.ts*' ! -name '*.js*' -exec cp -p --parents {} ../dist ';'",
+    "build": "yarn compile && yarn copy-assets",
+    "prepublish": "yarn build",
+    "clean": "rm -rf ./node_modules && rm -rf ./dist"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "artemis-prime",
+  "license": "Apache-2.0",
+  "exports": {
+    "./components": {
+      "import": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    },
+    "./pages": {
+      "import": "./dist/pages/index.js",
+      "types": "./dist/pages/index.d.ts"
+    },
+    "./types": {
+      "import": "./dist/types/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./types/auth": {
+      "import": "./dist/types/auth/index.js",
+      "types": "./dist/types/auth/index.d.ts"
+    },
+    "./types/serialize": {
+      "import": "./dist/types/serialize/index.js",
+      "types": "./dist/types/autserializeh/index.d.ts"
+    },
+    "./util": {
+      "import": "./dist/util/index.js",
+      "types": "./dist/util/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "selectn": "^1.1.2",
+    "query-string": "^6.13.8",
+    "formik": "^2.2.6",
+    "formik-material-ui": "^3.0.1",
+    "@react-hook/window-size": "^3.0.7",
+    "moment": "^2.29.1",
+    "react-linkify": "^1.0.0-alpha",
+    "react-player": "^2.7.0",
+    "generate-unique-id": "^2.0.1",
+    "json2mq": "^0.2.0",
+    "@prezly/react-promise-modal": "^0.2.0"
+
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "classnames": "^2.2.6",
+    "material-ui-phone-number": "^2.2.6",
+    "material-ui-popup-state": "^1.7.0",
+    "mobx": "^6.3.7",
+    "mobx-react": "^7.2.1",
+    "mobx-utils": "^6.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^5.2.1",
+    "react-table": "^7.7.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/react-table": "^7.7.7",
+    "sass": "^1.41.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1"
+  }
+}
